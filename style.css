@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #0b1120; /* Głębokie, ciemne tło */
+    color: #f1f5f9;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Karta / Kontener — Wyraźnie jaśniejszy grafit z jasną ramką */
+.app-card {
+    background-color: #1e293b !important; /* Wyraźny Slate 800 */
+    border: 1px solid #475569 !important;  /* Jasny Slate 600 - wyraźna krawędź */
+    border-radius: 1rem;
+}
+
+.app-card-header {
+    background-color: #1e293b !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+.app-subcard {
+    background-color: #0f172a !important; /* Ciemniejsze tło wewnątrz kart dla kontrasu */
+    border: 1px solid #334155 !important;
+    border-radius: 0.75rem;
+}
+
+/* Tabele */
+.app-table-header {
+    background-color: #0f172a !important;
+    border-bottom: 1px solid #334155 !important;
+    color: #94a3b8;
+}
+
+.app-table-row {
+    border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+    transition: background-color 0.15s ease;
+}
+
+.app-table-row:hover {
+    background-color: rgba(71, 85, 105, 0.25);
+}
+
+.app-table-row.is-processed {
+    opacity: 0.4;
+    background-color: rgba(15, 23, 42, 0.6);
+}
+
+/* Pasek nawigacyjny */
+.app-nav {
+    background-color: #1e293b !important;
+    border: 1px solid #475569 !important;
+    padding: 0.375rem;
+    border-radius: 0.75rem;
+}
+
+.app-tab-active {
+    background-color: #4f46e5 !important;
+    color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.app-tab-inactive {
+    color: #94a3b8;
+}
+
+.app-tab-inactive:hover {
+    color: #f8fafc;
+    background-color: rgba(71, 85, 105, 0.3);
+}
+
+/* Przycisk akcji */
+.btn-fetch {
+    background-color: #4f46e5;
+    color: #ffffff;
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-fetch:hover {
+    background-color: #4338ca;
+}
+
+.btn-fetch:active {
+    transform: scale(0.98);
+}
+
+/* Zabezpieczenie szerokości kolumn i przycisku pakowania w tabeli */
+#orders-table th, 
+#orders-table td {
+    white-space: nowrap;
+}
+/* Zapobiegaj poziomiemu przewijaniu całej strony */
+body, html {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Opcjonalnie: pozwól tabeli na elastyczne dopasowanie, jeśli brakuje miejsca */
+#orders-table {
+    table-layout: auto;
+}

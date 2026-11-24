@@ -1,0 +1,10 @@
+# Dane dostępowe
+config.local.php
+
+# Baza danych (dane produkcyjne)
+*.sqlite
+*.sqlite-journal
+
+# Pliki generowane / biblioteka SVG
+plansze/
+imiona/
